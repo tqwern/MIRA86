@@ -1,0 +1,289 @@
+/* Общие стили */
+body {
+    /* font-family: 'Helvetica Neue', Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #bbb9b9;
+}
+h1, h2 {
+    color: #332626;
+    text-shadow: 2px 2px 6px rgba(131, 115, 115, 0.61);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('texture.jpg');
+    background-size: cover;
+
+}
+/* Заголовок */
+header {
+    display: flex ;
+    color: #e4ded9;
+    background-color: #837a70;
+    text-shadow: 4px 3px 8px rgba(0, 0, 0, 0.9);
+    font-weight: 600;
+    
+}
+.logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 25px;
+    /* margin: 20px; */
+}
+/* Навигация */
+nav {
+    margin: 40px 390px 40px 600px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #e4ded9;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.ya {
+    padding: 5px;
+}
+nav a:hover {
+    color: #691b1b;
+}
+a {
+    text-decoration: none;
+    color: #691b1b;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 8px ;
+}
+
+/* Контейнер для контента */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Изображения отелей */
+.hotel-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Стили для комнат */
+.room {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.room img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 30px 50px;
+  }
+  
+  .card {
+    position: relative;
+    width: 30%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px); /* Размытие картинки */
+    transition: filter 0.3s ease;
+  }
+  
+  .card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 160px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .card-image img {
+    filter: none; /* При наведении размытость исчезает */
+  }
+  
+  .card:hover .card-text {
+    opacity: 0; /* При наведении текст пропадает */
+  }
+
+.phone1 {
+    font-weight: 900;
+}
+.phone2 {
+    color: #ddd;
+    font-weight: 900;
+}
+.btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+/* iframe */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.map-container {
+    position: relative; /* Важно для позиционирования */
+    width: 100%; /* Или любая нужная вам ширина */
+    margin-top: 20px; /* Отступ от карты до контента */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px; /* Задайте нужную высоту карты */
+    border: 1px solid #ccc; /* Добавьте рамку */
+    box-sizing: border-box; /* Чтобы рамка не увеличивала ширину контейнера */
+}
+
+footer {
+    width: 100%; /* Футер на всю ширину экрана */
+    background-color: #333; /* Цвет фона */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; /* Цвет текста */
+}
+
+
+
+
+.letter {
+    max-width: 600px; /* Максимальная ширина блока */
+    margin: 50px auto; /* Отступы сверху и по центру */
+    padding: 20px; /* Внутренние отступы */
+    background-color: #f2f2f2; /* Фон блока */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тень под блоком */
+    text-align: center; /* Выравнивание текста по центру */
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.letter p {
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-bottom: 15px; /* Отступ между абзацами */
+}
+
+.letter p:last-child {
+    font-weight: bold; /* Жирный шрифт для последнего абзаца */
+    margin-top: 20px; /* Отступ сверху для подписи */
+}
+
+.indexh2 { 
+    background-color: #837a70;
+    padding: 20px;
+    color: #e4ded9;
+    text-shadow: 4px 3px 8px rgba(0, 0, 0, 0.9);
+}
+/* Медиа-запросы для адаптивности */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Заголовок в колонку */
+        align-items: center; /* Центрируем содержимое */
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 0; /* Убираем левый отступ */
+        margin-top: 10px; /* Делаем меньше отступ сверху */
+    }
+
+    nav {
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .info {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .card-container {
+        flex-direction: column; /* Располагаем карточки вертикально */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Занимают почти всю ширину */
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .footer-bottom img {
+        width: 80px; /* Уменьшаем размер логотипа */
+    }
+}
